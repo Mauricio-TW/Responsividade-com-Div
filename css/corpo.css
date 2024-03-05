@@ -1,0 +1,71 @@
+#corpo{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#cabecalho{
+    width: 100%;
+    height: auto;
+    background-image: url("../imagens/starfundo.jpg");
+    border-radius: 6px;
+}
+
+#plogo{
+    text-align: center;
+}
+
+#imglogo{
+    width: 400px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#link{
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+#meio{
+    width: 100%;
+    height: 640px;
+}
+
+#ladoesq{
+    width: 30%;
+    height: 640px;
+    float: left;
+}
+
+#ladodir{
+    width: 70%;
+    height: 640px;
+    float: right;
+}
+
+#rodape{
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+}
+
+/*Responsividade*/
+@media all and (max-widht: 1100px){
+    nav, div, #corpo, #cabecalho, #plogo, #imglogo, #menu, #ladoesq, #ladodir{
+        width: 100%;
+        height: auto;
+    }
+    #imglogo{
+        width: 400px;
+        height: auto;
+    }
+}
+@media all and (max-widht: 400px){
+    #imglogo{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
