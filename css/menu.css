@@ -1,4 +1,4 @@
-@media all and(min-width: 900px){
+@media all and (min-width: 900px){
     #menu{
         width: 100%;
         height: auto;
@@ -30,7 +30,7 @@
     }
 }
 
-@media all and(min-width: 600px) and (max-widht: 899px){
+@media all and (min-width: 600px) and (max-widht: 899px){
     #menu{
         width: auto;
         height: auto;
@@ -55,7 +55,43 @@
         letter-spacing: 4px;
         color: black;
     }
-    #menu ul li a:link a:visited, a:hover{
+    #menu ul li a:link a:visited{
+        color: white;
+    }
+    #menu ul li a:hover{
+        color: white;
+    }
+}
+
+@media all and (max-width: 599px){
+    #menu{
+        width: auto;
+        height: auto;
+        margin-bottom: auto;
+        background-color: yellow;
+    }
+    #menu ul{
+        list-style: none;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #menu ul li{
+        text-align: center;
+        display: block;
+        word-spacing: 4px;
+        margin-bottom: 5px;
+        font-family: arial black;
+    }
+    #menu ul li a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+    }
+    #menu ul li a:link, a:visited{
+        color: white;
+    }
+    #menu ul li a:hover{
         color: white;
     }
 }
