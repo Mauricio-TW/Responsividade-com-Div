@@ -1,0 +1,31 @@
+@media all and(min-width: 900px){
+    #menu{
+        width: 100%;
+        height: auto;
+        background-color: red;
+    }
+    #menu ul{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #menu ul li{
+        display: inline;
+        word-spacing: 10px;
+        font-family: Arial black;
+    }
+    #menu ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: black;
+    }
+    #menu ul li a:link, a:visited{
+        color: white;
+        padding: 20px;
+    }
+    #menu ul li a:hover{
+        color: white;
+    }
+}
