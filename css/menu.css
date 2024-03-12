@@ -62,16 +62,34 @@
     height: 50px;
 }
 
+#bt_menu{
+    display: none;
+}
+
+label[for="bt_menu"]{
+    display: none;
+}
+
 @media (max-widht: 800px){
-    #menu{
-        width: auto;
+    #label[for="bt_menu"]{
+        display: block;
+    }
+    #bt_menu:checked ~ #menu{
+        margin: 0;
         height: auto;
+    }
+    #menu{
+        margin-left: -100%;
+        transition: all 1s;
+        height: 0;
     }
     #menu ul li{
         width: 100%;
+        float: none;
     }
     #menu ul ul{
         position: static;
+        overflow: hidden;
         max-height: 0;
         transition: all 4s;
     }
