@@ -77,9 +77,7 @@ label[for="bt_menu"]{
 	#bt_menu:checked ~ #menu{
 		margin: 0;
 		height: auto;
-	}
-	
-	
+	}	
 	#menu{
 		margin-left: -100%;
 		transition: all 1s;
