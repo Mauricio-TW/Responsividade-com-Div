@@ -27,29 +27,33 @@
 
     <!--Section-->
     <section>
-    <input type="checkbox" id="bt_menu"/>
-    <label for="bt_menu">&#9776</label>
-        <nav id="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Pagina 2</a>
-                    <ul>
-                        <li><a href="#">Sub 2</a></li>
-                        <li><a href="#">Sub 3</a></li>
-                        <li><a href="#">Sub 4</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Pagina 3</a></li>
-                <li><a href="#">Pagina 4</a>
-                    <ul>
-                        <li><a href="#">Sub 2</a></li>
-                        <li><a href="#">Sub 3</a></li>
-                        <li><a href="#">Sub 4</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Pagina 5</a></li>
-                <li><a href="#">Pagina 6</a></li>
-            </ul>
+        <nav>
+           <div class="topnav" id="myTopnav">
+                <a href="#" class="active">Principal</a>
+                <a href="#">Pagina 1</a>
+                <a href="#">Pagina 2</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Pagina 3</button>
+                    <div class="dropdownsub">
+                        <a href="#">Sub 1</a>
+                        <a href="#">Sub 2</a>
+                        <a href="#">Sub 3</a>
+                    </div><!--Fim da div dropdownsub-->
+                </div><!--Fim da div dropdown-->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Pagina 4
+                    </button>
+                    <div class="dropdownsub">
+                        <a href="#">Sub 1</a>
+                        <a href="#">Sub 2</a>
+                        <a href="#">Sub 3</a>
+                    </div><!--Fim da div dropdownsub-->
+                </div><!--Fim da div dropdown-->
+                <a href="#">Pagina 5</a>
+                <a href="#">Pagina 6</a>
+                <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776</a>
+           </div><!--Fim da div myTopnav-->
         </nav>
     </section>
     <hr>
@@ -98,5 +102,17 @@
         </div><!--Fim da div divmeiofooter-->
     </footer>
 </main>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myTopnav");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+                //Abre e executa o Icone do menu
+            }else{
+                x.className = "topnav";
+                //recolhe o menu pelo icone
+            }
+        }
+    </script>
 </body>
 </html>
