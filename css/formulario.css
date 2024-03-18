@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#formP{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+fieldset{
+    border: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dados{
+    margin-bottom: 15px;
+}
+
+.dados label{
+    margin-bottom: 5px;
+    color: #666;
+    display: block;
+}
+
+.dados input[type="text"], .dados input[type="email"], .dados input[type="password"], .dados input[type="tel"], .dados input[type="date"], .dados select, .dados textarea{
+    padding: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 8px #888;
+    border-radius: 8px;
+    width: 400px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.dados input:focus, .dados select:focus, .dados textarea:focus{
+    background-color: #888;
+    outline: none;
+}
+
+.dados{
+    color: #666;
+}
+
+.botao{
+    font-size: 24px;
+    width: 200px;
+    background-color: red;
+    border: 1;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 5px 7px;
+    box-shadow: 8px 8px 8px rgba(0, 128, 128);
+    text-shadow: 3px 3px 3px rgba(0, 191, 255);
+}
+
+.botao:hover{
+    background-color: #f4a460;
+    box-shadow: 8px 8px 8px rgba(255, 0, 255);
+}
+
+.botao, select{
+    cursor: pointer;
+}
+
+@media all and (max-width: 450px){
+    #formP{
+        font-size: 20px;
+    }
+    fieldset{
+        font-size: 16px;
+    }
+    .dados input[type="text"],
+    .dados input[type="email"],
+    .dados input[type="password"],
+    .dados input[type="tel"],
+    .dados input[type="date"],
+    .dados select,
+    .dados textarea{
+        width: 95%;
+        height: auto;
+        font-size: 16px;
+    }
+    .botao{
+        font-size: 20px;
+        width: 100px;
+        height: auto;
+    }
+}
